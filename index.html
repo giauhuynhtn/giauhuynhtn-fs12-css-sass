@@ -1,12 +1,3 @@
-<!-- Please copy your HTML from the ac11y lesson to here 
-   and do some styling to it. using Flex-box and Grid.
-   PS: keep your styling simple and don't spend too much time figuring out what colors, fonts etc-->
-
-<!-- please install sass globally by running this command
-   npm install -g sass
-
-   then run this in your terminal: sass:watch or npm run sass:watch
-   now you can type in style.scss and it will compile it automatically to style.css-->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -18,6 +9,304 @@
     <title>Portfolio</title>
   </head>
   <body>
-    <h1>Welcome to CSS assignment!</h1>
+    <div class="app-container">
+      <!-- Header section -->
+      <header>
+        <img
+          class="header-logo"
+          src="./assets/images/wordpress-logo.png"
+          alt="header logo"
+        />
+
+        <nav>
+          <a href="" class="menu-item">Home</a>
+          <a href="" class="menu-item">About</a>
+          <a href="" class="menu-item">Services</a>
+          <a href="" class="menu-item">Tech stack</a>
+          <a href="" class="menu-item">Blogs</a>
+          <a href="" class="menu-item">Contact</a>
+        </nav>
+      </header>
+
+      <!-- About section -->
+
+      <section id="about-section" aria-label="about-section">
+        <div class="about-content" aria-label="about-section">
+          <h1>My portfolio</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+            porttitor, odio eu consectetur adipiscing elit. Integer
+            porttitorvulputate dignissim, enim libero Lorem ipsum dolor sit
+            amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit elitvehicula neque, nec suscipit sem felis in risus.
+          </p>
+        </div>
+        <img
+          class="header-content-img"
+          src="./assets/images/header.svg"
+          alt="about image"
+        />
+        
+      </section>
+
+      <!-- Services section -->
+
+      <section class="services-content" aria-label="services-section">
+        <h2>Services</h2>
+        <div class="services-list">
+          <div class="services-item">
+            <h3>Service 1</h3>
+            <p>
+              Cras eleifend mi facilisis ultricies efficitur. Mauris ut dapibus
+              odio. Vestibulum in nibh id tellus tincidunt rhoncus eget et est.
+              Nulla gravida a nisl interdum ornare. Vestibulum ante ipsum primis
+              in faucibus orci luctus et ultrices posuere cubilia curae; Sed at
+              arcu leo.
+            </p>
+            <button>More detail</button>
+          </div>
+          <div class="services-item">
+            <h3>Service 2</h3>
+            <p>
+              Cras eleifend mi facilisis ultricies efficitur. Mauris ut dapibus
+              odio. Vestibulum in nibh id tellus tincidunt rhoncus eget et est.
+              Nulla gravida a nisl interdum ornare. Vestibulum ante ipsum primis
+              in faucibus orci luctus et ultrices posuere cubilia curae; Sed at
+              arcu leo.
+            </p>
+            <button>More detail</button>
+          </div>
+          <div class="services-item">
+            <h3>Service 3</h3>
+            <p>
+              Cras eleifend mi facilisis ultricies efficitur. Mauris ut dapibus
+              odio. Vestibulum in nibh id tellus tincidunt rhoncus eget et est.
+              Nulla gravida a nisl interdum ornare. Vestibulum ante ipsum primis
+              in faucibus orci luctus et ultrices posuere cubilia curae; Sed at
+              arcu leo.
+            </p>
+            <button>More detail</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tech stack section -->
+      <section class="tech-content" aria-label="tech-stack-section">
+        <h2>Tech stack</h2>
+        <div class="tech-logo-list">
+          <i class="tech-logo-item fab fa-js" aria-hidden="true"></i>
+          <i class="tech-logo-item fab fa-html5" aria-hidden="true"></i>
+          <i class="tech-logo-item fab fa-react" aria-hidden="true"></i>
+          <i class="tech-logo-item fab fa-sass" aria-hidden="true"></i>
+          <i class="tech-logo-item fab fa-css3" aria-hidden="true"></i>
+        </div>
+      </section>
+
+      <!-- Blogs section -->
+
+      <section class="blogs-content" aria-label="blogs-section">
+        <h2>Blogs</h2>
+        <ul class="blog-list">
+          <li class="blog-item">
+            <img
+              class="blog-img"
+              src="./assets/images/img-3.jpg"
+              alt="blog img"
+            />
+            <div>
+              <h3>Blog 1</h3>
+              <h4>Published: 01.01.2022</h4>
+              <p>
+                Morbi in hendrerit eros, et commodo odio. Curabitur ligula eros,
+                feugiat at orci ac, interdum imperdiet dui. Phasellus ex mi,
+                gravida ut efficitur vestibulum, lobortis vitae dolor.
+              </p>
+              <button>More detail</button>
+            </div>
+          </li>
+
+          <li class="blog-item">
+            <img
+              class="blog-img"
+              src="./assets/images/img-3.jpg"
+              alt="blog img"
+            />
+            <div>
+              <h3>Blog 2</h3>
+              <h4>Published: 11.01.2022</h4>
+              <p>
+                Morbi in hendrerit eros, et commodo odio. Curabitur ligula eros,
+                feugiat at orci ac, interdum imperdiet dui. Phasellus ex mi,
+                gravida ut efficitur vestibulum, lobortis vitae dolor.
+              </p>
+              <button>More detail</button>
+            </div>
+          </li>
+
+          <li class="blog-item">
+            <img
+              class="blog-img"
+              src="./assets/images/img-3.jpg"
+              alt="blog img"
+            />
+            <div>
+              <h3>Blog 3</h3>
+              <h4>Published: 01.04.2022</h4>
+              <p>
+                Morbi in hendrerit eros, et commodo odio. Curabitur ligula eros,
+                feugiat at orci ac, interdum imperdiet dui. Phasellus ex mi,
+                gravida ut efficitur vestibulum, lobortis vitae dolor.
+              </p>
+              <button>More detail</button>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Contact section -->
+
+      <section class="contact-wrapper" aria-label="contact-section">
+        <h2>Contact me</h2>
+        <form class="contact-content">
+          <label for="name-input">Your name:</label>
+          <input
+            id="name-input"
+            type="text"
+            placeholder="Your name"
+            name="name"
+          />
+          <label for="email-input"> Your email: </label>
+          <input
+            id="email-input"
+            type="email"
+            placeholder="youremail@mail.com"
+            name="email"
+          />
+          <label for="message-input"> Your message: </label>
+          <textarea
+            id="message-input"
+            type="text"
+            placeholder="Your message"
+            name="message"
+            text-align="top"
+          ></textarea>
+
+          <button class="submit-btn" type="submit">Submit</button>
+        </form>
+      </section>
+
+      <!-- Footer section -->
+      <footer>
+        <p>© 2022 Giau Huynh. All rights reserved.</p>
+        <div class="footer-icons-list">
+          <img
+            class="footer-icon"
+            src="./assets/images/fb-icon.png"
+            alt="Facebook"
+          />
+          <img
+            class="footer-icon"
+            src="./assets/images/linkedin-icon.png"
+            alt="LinkedIn"
+          />
+          <img
+            class="footer-icon"
+            src="./assets/images/twitter-icon.png"
+            alt="Twitter"
+          />
+        </div>
+      </footer>
+    </div>
+
+    <!-- Blog page -->
+    <!-- <header>
+      <img
+        class="header-logo"
+        src="./assets/images/favicon-sheep.png"
+        alt="header logo"
+      />
+
+      <nav>
+        Menu
+        <a href="" class="menu-item">Home</a>
+        <a href="" class="menu-item">About</a>
+        <a href="" class="menu-item">Services</a>
+        <a href="" class="menu-item">Tech stack</a>
+        <a href="" class="menu-item">Blogs</a>
+        <a href="" class="menu-item">Contact</a>
+      </nav>
+    </header>
+
+    <div aria-label="blogs-page">
+      <h1>Blogs</h1>
+      <ul aria-label="blogs-list">
+        <li aria-label="blog-item">
+          <img
+            class="blog-img"
+            src="./assets/images/img-3.jpg"
+            alt="blog img"
+          />
+          <p>
+            Cras eleifend mi facilisis ultricies efficitur. Mauris ut dapibus
+            odio. Vestibulum in nibh id tellus tincidunt rhoncus eget et est.
+            Nulla gravida a nisl interdum ornare. Vestibulum ante ipsum primis
+            in faucibus orci luctus et ultrices posuere cubilia curae; Sed at
+            arcu leo.
+          </p>
+        </li>
+        <li aria-label="blog-item">
+          <img
+            class="blog-img"
+            src="./assets/images/img-3.jpg"
+            alt="blog img"
+          />
+          <p>
+            Cras eleifend mi facilisis ultricies efficitur. Mauris ut dapibus
+            odio. Vestibulum in nibh id tellus tincidunt rhoncus eget et est.
+            Nulla gravida a nisl interdum ornare. Vestibulum ante ipsum primis
+            in faucibus orci luctus et ultrices posuere cubilia curae; Sed at
+            arcu leo.
+          </p>
+        </li>
+        <li aria-label="blog-item">
+          <img
+            class="blog-img"
+            src="./assets/images/img-3.jpg"
+            alt="blog img"
+          />
+          <p>
+            Cras eleifend mi facilisis ultricies efficitur. Mauris ut dapibus
+            odio. Vestibulum in nibh id tellus tincidunt rhoncus eget et est.
+            Nulla gravida a nisl interdum ornare. Vestibulum ante ipsum primis
+            in faucibus orci luctus et ultrices posuere cubilia curae; Sed at
+            arcu leo.
+          </p>
+        </li>
+      </ul>
+    </div>
+    <footer>
+      <p>© 2022 Giau Huynh. All rights reserved.</p>
+      <div class="footer-icons-list">
+        <img
+          class="footer-icon"
+          src="./assets/images/fb-icon.png"
+          alt="Facebook"
+        />
+        <img
+          class="footer-icon"
+          src="./assets/images/linkedin-icon.png"
+          alt="LinkedIn"
+        />
+        <img
+          class="footer-icon"
+          src="./assets/images/twitter-icon.png"
+          alt="Twitter"
+        />
+      </div>
+    </footer> -->
+    <script
+      src="https://kit.fontawesome.com/cc4be81cad.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
